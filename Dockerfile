@@ -8,3 +8,6 @@ RUN apk add --no-cache bash bash-completion sudo git nano curl man
 
 # Set /var/www as working directory
 WORKDIR /var/www
+
+# Keep running
+CMD [ "/bin/bash" ]
