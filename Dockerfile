@@ -1,5 +1,5 @@
-# Start with base image node:alpine
-FROM node:alpine
+# Start with base image node:9-alpine
+FROM node:9-alpine
 
 LABEL maintainer="faiyaz7283@gmail.com"
 
@@ -8,6 +8,3 @@ RUN apk add --no-cache bash bash-completion sudo git nano curl man
 
 # Set /var/www as working directory
 WORKDIR /var/www
-
-# Keep running
-CMD ["/bin/bash", "-D"]
