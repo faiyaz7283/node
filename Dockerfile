@@ -10,4 +10,4 @@ RUN apk add --no-cache bash bash-completion sudo git nano curl man
 WORKDIR /var/www
 
 # Keep running
-CMD [ "/bin/bash" ]
+CMD ["npm", "start"]
